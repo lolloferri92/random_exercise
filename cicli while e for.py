@@ -22,16 +22,16 @@ def paricheck(x):
     if x%2==0:
         return True
     else:
-        False
+        return False
 print ("lista con ciclo while break e continue")
-#esempio di ciclo infinito
-infinite=0
+#esempio di ciclo infinito con breack e continue
 i=0
-while infinite==0:
+while True:
     if i==26:
         break
-   # elif paricheck(i)!=True:
-       # continue
+    elif paricheck(i)!=True:
+        i+=1
+        continue
     else:
         print("infinite" + str(i))
         i+=1
